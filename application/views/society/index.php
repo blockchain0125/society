@@ -1,9 +1,6 @@
-<html>
-    <body>
-        <button onclick="marco()">Marco Fine Arts</button>  
-        <button onclick="dream()">DreamJunction</button>
-        <div id="result"></div>
-    </body>
+    <button onclick="marco()">Marco Fine Arts</button>  
+    <button onclick="dream()">DreamJunction</button>
+    <div id="result"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -35,4 +32,3 @@
         // }
 
     </script>
-</html>
