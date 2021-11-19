@@ -10,26 +10,29 @@
 
         function marco(){
             $.get("<?php echo site_url('index.php/Society/marco'); ?>", function(data, status){
-                showResult(JSON.parse(data));
+                document.getElementById("result").innerHTML = data;
+                // showResult(JSON.parse(data));
             });
         };
 
         function dream(){
             $.get("<?php echo site_url('index.php/Society/dream'); ?>", function(data, status){
-                showResult(JSON.parse(data));
+                document.getElementById("result").innerHTML = data;
+                // showResult(JSON.parse(data));
             });
         };
 
-        function showResult(data){
-            result = "";
-            for (let index = 0; index < data.length; index++) {
-                for (const x in data[index]) {
-                    result += x + " : " + data[index][x] + ", ";
-                }
-                result += "<br>"
-            }
-            document.getElementById("result").innerHTML = result;
-        }
+        // function showResult(data){
+        //     result = "";
+        //     for (let index = 0; index < data.length; index++) {
+
+        //         for (const x in data[index]) {
+        //             result += x + " : " + data[index][x] + ", ";
+        //         }
+        //         result += "<br>"
+        //     }
+        //     document.getElementById("result").innerHTML = result;
+        // }
 
     </script>
 </html>
